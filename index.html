@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>My Home</title>
+    </head>
+    <style>
+        body
+        {
+            background-image: url(pictures/background.gif);
+            background-size: cover;
+        }
+
+        #timeBox {
+            position: fixed; /* Fixed position relative to the viewport */
+            bottom: 10px; /* 10px from the bottom */
+            left: 10px; /* 10px from the left */
+            padding: 10px 20px; /* Add padding inside the box */
+            background-color: rgba(173, 0, 71, 0.8); /* Semi-transparent red background */
+            color: #ffffff; /* White text */
+            font-family: Arial, sans-serif; /* Modern font style */
+            font-size: 18px; /* Readable font size */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+            border: 2px solid #ad0047; /* Border matching the theme color */
+            z-index: 1000; /* Ensure it's above other content */
+        }
+
+    </style>
+
+        <div align="center">
+        <p>
+        <img src="pictures/welcomes.webp" align="center" width="1000px" alt="Welcome">
+        </p>
+
+        <hr size="4" color="ad0047" width="60%">
+
+        <p>
+        <!--Using image as hyperlink, local link-->
+        <a href="index.html"><img src="pictures/HOME.png"></a>
+        <a href="biodata.html"><img src="pictures/BIODATA.png"></a>
+        <a href="family.html"><img src="pictures/FAMILY.png"></a>
+        <a href="education.html"><img src="pictures/EDUCATION.png"></a>
+        <a href="experience.html"><img src="pictures/EXPERIENCE.png"></a>
+        <a href="gallery.html"><img src="pictures/GALLERY.png"></a>
+        </p>
+        <hr size="4" color="ad0047" width="60%">
+        </div>
+
+        <div align="center">
+        <p>
+            <h4 style="text-align: center;">
+                <img src="pictures/uitm logo.png" width="250px" alt="UiTM Logo">
+                <br>
+                <br>
+                <p>
+                    <font color="ad0047" size="5" face="comic sans"><b>NAME:</b></font>
+                    <font color="ad0047" size="5" face="comic sans">Izzatun Nisa</font>
+                </p>
+
+                <p>
+                    <font color="ad0047" size="5" face="comic sans"><b>STUDENT ID:</b></font>
+                    <font color="ad0047" size="5" face="comic sans">2022450798</font></p>
+                </p>
+
+                <p>
+                    <font color="ad0047" size="5" face="comic sans"><b>CAMPUS:</b></font>
+                    <font color="ad0047" size="5" face="comic sans">UiTM Rembau Campus</font></p>
+                </p>
+
+        </p></div>
+
+        <hr size="4" color="ad0047" width="100%">
+
+        <div align="center" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+            <!-- Instagram Link -->
+            <a href="https://www.instagram.com/izzatunizhab_/" target="_blank" style="text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <img src="pictures/Instagram-Glyph-Color-Logo.wine.png" alt="Instagram logo" style="width: 100px; height: auto;">
+                <img src="pictures/Instagram-Wordmark-Logo.wine.png" alt="Instagram wordmark" style="width: 100px; height: auto;">
+            </a>
+            <!-- TikTok Link -->
+            <a href="https://www.tiktok.com/@mel0zz_" target="_blank" style="text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <img src="pictures/TikTok-Icon-Logo.wine.png" alt="TikTok logo" style="width: 100px; height: auto;">
+                <img src="pictures/TikTok-Wordmark-Logo.wine.png" alt="TikTok wordmark" style="width: 100px; height: auto;">
+            </a>
+            <!-- WhatsApp Link -->
+            <a href="https://wa.me/+60102871602?text=Hello%20there!" target="_blank" style="text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <img src="pictures/WhatsApp-MonochromeWithName2-Logo.wine.png" alt="WhatsApp logo" style="width: 100px; height: auto;">
+                <span style="font-size: 16px; font-weight: bold; color: #25D366;">Chat on WhatsApp</span>
+            </a>
+        </div>
+
+        <hr size="4" color="ad0047" width="100%">
+
+        <!-- Box for Current Time -->
+        <div id="timeBox">
+            Current Time: <span id="currentTime"></span>
+        </div>
+
+        <!-- JavaScript for Current Time (24-Hour Format) -->
+        <script>
+            function updateTime() {
+                const now = new Date();
+                const hours = String(now.getHours()).padStart(2, '0'); // Get hours in 24-hour format
+                const minutes = String(now.getMinutes()).padStart(2, '0'); // Get minutes
+                const seconds = String(now.getSeconds()).padStart(2, '0'); // Get seconds
+                const timeString = `${hours}:${minutes}:${seconds}`; // Format as HH:MM:SS
+                document.getElementById('currentTime').textContent = timeString;
+            }
+            setInterval(updateTime, 1000); // Update every second
+            updateTime(); // Initial call to display time immediately
+        </script>
+        
+        <div align="center">
+            <a href="#top"><img src="pictures/arrow top_edited.png"></a></div>
+
+        </body>
+    </html>
