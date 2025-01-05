@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <title>Experience</title>
+    </head>
+    <style>
+        body
+        {
+            background-image: url(pictures/background.gif);
+            background-size: cover;
+        }
+
+        #timeBox {
+            position: fixed; /* Fixed position relative to the viewport */
+            bottom: 10px; /* 10px from the bottom */
+            left: 10px; /* 10px from the left */
+            padding: 10px 20px; /* Add padding inside the box */
+            background-color: rgba(173, 0, 71, 0.8); /* Semi-transparent red background */
+            color: #ffffff; /* White text */
+            font-family: Arial, sans-serif; /* Modern font style */
+            font-size: 18px; /* Readable font size */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+            border: 2px solid #ad0047; /* Border matching the theme color */
+            z-index: 1000; /* Ensure it's above other content */
+        }
+
+        h1 {
+                color: #d81b60;
+                margin-bottom: 20px;
+            }
+
+    </style>
+    <body bgcolor="fae5d3">
+
+        <div align="center">
+        <p>
+        <img src="pictures/welcomes.webp" align="center" width="1000px">
+        </p>
+
+        <hr size="4" color="ad0047" width="60%">
+
+        <p>
+        <!--Using image as hyperlink, local link-->
+        <a href="index.html"><img src="pictures/HOME.png"></a>
+        <a href="biodata.html"><img src="pictures/BIODATA.png"></a>
+        <a href="family.html"><img src="pictures/FAMILY.png"></a>
+        <a href="education.html"><img src="pictures/EDUCATION.png"></a>
+        <a href="experience.html"><img src="pictures/EXPERIENCE.png"></a>
+        <a href="gallery.html"><img src="pictures/GALLERY.png"></a>
+        </p>
+        <hr size="4" color="ad0047" width="60%">
+        
+        <br>
+        <br>
+        <h1>My Working Experience</h1>
+        <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 70%; background-color: #fff; font-family: Arial, sans-serif; color: #333;">
+            <thead style="background-color: #f8c6d8; color: #ad0047;">
+                <tr>
+                    <th>Position</th>
+                    <th>Company Name</th>
+                    <th>Duration</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>Cashier</td>
+                    <td>Butik Schanteq</td>
+                    <td>July 2022 - September 2023</td>
+                    <td>Handled transactions, managed the cash register, and ensured smooth checkout processes.</td>
+                </tr>
+                <tr>
+                    <td>Barista</td>
+                    <td>Richiamo Coffee</td>
+                    <td>February 2024 - April 2024</td>
+                    <td>Prepared high-quality coffee and beverages, maintained cleanliness, and provided excellent customer service.</td>
+                </tr>
+                <tr>
+                    <td>Promoter</td>
+                    <td>Watsons</td>
+                    <td>July 2024 - September 2024</td>
+                    <td>Promoted products, interacted with customers, and increased sales through engaging demonstrations.</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div></div>
+
+        <!-- Box for Current Time -->
+        <div id="timeBox">
+            Current Time: <span id="currentTime"></span>
+        </div>
+
+        <!-- JavaScript for Current Time (24-Hour Format) -->
+        <script>
+            function updateTime() {
+                const now = new Date();
+                const hours = String(now.getHours()).padStart(2, '0'); // Get hours in 24-hour format
+                const minutes = String(now.getMinutes()).padStart(2, '0'); // Get minutes
+                const seconds = String(now.getSeconds()).padStart(2, '0'); // Get seconds
+                const timeString = `${hours}:${minutes}:${seconds}`; // Format as HH:MM:SS
+                document.getElementById('currentTime').textContent = timeString;
+            }
+            setInterval(updateTime, 1000); // Update every second
+            updateTime(); // Initial call to display time immediately
+        </script>
+
+        <div align="center">
+        <a href="#top"><img src="pictures/arrow top_edited.png"></a></div>
+
+        <!-- Background Music -->
+        <audio controls autoplay loop hidden="true">
+            <source src="audio/BLACKPINK - Typa Girl.mp3"audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+    
+    </body>
+</html>

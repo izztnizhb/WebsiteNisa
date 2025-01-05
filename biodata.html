@@ -1,0 +1,255 @@
+<html>
+    <head>
+        <title>Biodata</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                background-image: url(pictures/background.gif);
+                background-size: cover;
+            }
+
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 50px; /* Space between image and table */
+                margin-top: 40px;
+            }
+
+            .photo img {
+                width: 300px;
+                height: auto;
+                border: 2px solid #ad0047;
+                border-radius: 10px;
+            }
+
+            table, tr, th, td {
+                border: 1px solid #ad0047;
+                border-collapse: collapse;
+                padding: 15px;
+            }
+
+            td {
+                text-align: center;
+                background-color: pink;
+            }
+
+            #timeBox {
+                position: fixed; /* Fixed position relative to the viewport */
+                bottom: 10px; /* 10px from the bottom */
+                left: 10px; /* 10px from the left */
+                padding: 10px 20px; /* Add padding inside the box */
+                background-color: rgba(173, 0, 71, 0.8); /* Semi-transparent red background */
+                color: #ffffff; /* White text */
+                font-family: Arial, sans-serif; /* Modern font style */
+                font-size: 18px; /* Readable font size */
+                border-radius: 10px; /* Rounded corners */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+                border: 2px solid #ad0047; /* Border matching the theme color */
+                z-index: 1000; /* Ensure it's above other content */
+        }
+
+            .intro-box, .fav-songs, .fav-artist {
+                background: rgba(255, 240, 245, 0.9); /* Soft pink background */
+                border: 2px solid #ff69b4; /* Light pink border */
+                padding: 20px;
+                border-radius: 15px; /* Rounded corners */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+                margin: 20px;
+                width: 70%;
+        }
+
+            .intro-text {
+                font-family: 'Arial', sans-serif;
+                font-size: 15px;
+                color: #333; /* Dark gray for better contrast */
+                line-height: 1.6; /* Improve readability */
+                text-align: justify; /* Align text evenly */
+        }
+
+            .intro-box img {
+                max-width: 100px; /* Limit image size */
+                border-radius: 40%; /* Make the image circular */
+                margin-right: 20px; /* Add space between image and text */
+        }
+
+            h1, h2, h3 {
+                color: #ad0047;
+                margin-bottom: 20px;
+        }
+        </style>
+    </head>
+
+    <body bgcolor="fae5d3">
+
+        <div align="center">
+            <p>
+                <img src="pictures/welcomes.webp" align="center" width="1000px">
+            </p>
+
+            <hr size="4" color="ad0047" width="60%">
+
+            <p>
+                <a href="index.html"><img src="pictures/HOME.png"></a>
+                <a href="biodata.html"><img src="pictures/BIODATA.png"></a>
+                <a href="family.html"><img src="pictures/FAMILY.png"></a>
+                <a href="education.html"><img src="pictures/EDUCATION.png"></a>
+                <a href="experience.html"><img src="pictures/EXPERIENCE.png"></a>
+                <a href="gallery.html"><img src="pictures/GALLERY.png"></a>
+            </p>
+            <hr size="4" color="ad0047" width="60%">
+
+            <br>
+            <font color="ad0047" size="7" face="courier new">
+                <u><b>IZZATUN NISA</b></u>
+            </font>
+            <br><br>
+        </div>
+
+        <!-- Container to align image and table side by side -->
+        <div class="container">
+            <!-- Profile Picture Section -->
+            <div class="photo">
+                <a href="pictures/me.JPG" target="_blank">
+                    <img src="pictures/me_edited1.JPG" alt="Izzatun Nisa">
+                </a>
+            </div>
+
+            <!-- Biodata Table Section -->
+            <table style="width: 400px;">
+                <caption>Table 1: About Me</caption>
+                <tr>
+                    <th colspan="2"><img src="images/cat.gif" width="50px"></th>
+                </tr>
+                <tr>
+                    <th>Name</th>
+                    <td>Izzatun Nisa binti Izhab</td>
+                </tr>
+                <tr>
+                    <th>Age</th>
+                    <td>20 years old</td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <th>Race</th>
+                    <td>Malay</td>
+                </tr>
+                <tr>
+                    <th>Hobby</th>
+                    <td>Singing, Dancing</td>
+                </tr>
+            </table>
+        </div>
+
+        <div align="center" style="margin-top: 20px;">
+            <div style="
+                display: inline-block;
+                padding: 10px;
+                background-color: rgba(173, 0, 71, 0.1); /* Light background color with transparency */
+                border: 2px solid #ad0047; /* Border color matching the theme */
+                border-radius: 10px; /* Rounded corners */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+                font-family: Arial, sans-serif; /* Modern font style */
+                font-size: 18px; /* Adjust font size */
+                color: #ad0047; /* Text color matching the theme */
+                text-align: center;
+            ">
+                <p>
+                    My initial is IZZATUN NISA BINTI IZHAB<sub>inbi</sub>
+                </p>
+            </div>
+        </div>
+
+        <div class="intro-box">
+            <h4 style="text-align: right;">
+                <a href="images/cat.gif" target="_blank">
+                <img src="images/cat.gif" hspace="10" vspace="10" style="float: left;" alt="Nisa yang cantik">
+                <p class="intro-text">
+                    <br></a>
+        
+                    Hello! My name is Izzatun Nisa binti Izhab. I am currently a final year student at
+                    <i>UiTM Rembau Campus</i>, majoring in Information Management. I love to sing and dance because it makes me happy.
+                </p>
+            </h4>
+        </div>
+        
+        <div class="fav-songs">
+            <p>
+                <h2>My Current Favourite Songs</h2>
+                <h3><ol type="1">
+                    <li>
+                    <a href="https://open.spotify.com/track/0B0tYbVp7pDQAqKDhgMeaL?si=195a56e16c4c4ef7" target="_blank">Too Good To Say Goodbye - Bruno Mars</a></li>
+
+                    <li>
+                    <a href="https://open.spotify.com/track/5OdI6v2L7Aez4cclpbojiZ?si=411125417bbd44c5" target="_blank">Stay A Little Longer - Rosé</a></li>
+
+                    <li>
+                    <a href="https://open.spotify.com/track/1lcBt7LoEikqYmhUoa2cez?si=2e525b74dda04d33" target="_blank">Number One Girl - Rosé</a></li>
+
+                    <li>
+                    <a href="https://open.spotify.com/track/0knbMPVHpFbsx38pLoYSRs?si=6c68cb69d225437f" target="_blank">Hysteria - Muse</a></li>
+
+                    <li>
+                    <a href="https://open.spotify.com/track/0GjEhVFGZW8afUYGChu3Rr?si=c71e93df97824c59" target="_blank">Dancing Queen - ABBA</a></li>
+                    
+                </ol></h3></p>
+            </div>
+
+            <div class="fav-artist">
+                <p>
+                <h2>My Current Favourite Songs</h2>
+                <h3><ul>
+                    <li>
+                    <a href="https://en.wikipedia.org/wiki/Bruno_Mars" target="_blank">Bruno Mars</a></li>
+    
+                    <li>
+                    <a href="https://en.wikipedia.org/wiki/Ros%C3%A9_(singer)" target="_blank">Rosé</a></li>
+    
+                    <li>
+                    <a href="https://en.wikipedia.org/wiki/Billie_Eilish" target="_blank">Billie Eilish</a></li>
+    
+                    <li>
+                    <a href="https://en.wikipedia.org/wiki/Avenged_Sevenfold" target="_blank">Avenged Sevenfold</a></li>
+    
+                    <li>
+                    <a href="https://en.wikipedia.org/wiki/Exo" target="_blank">EXO</a></li>
+                        
+                </ul></h3></p>
+            </div>
+        
+        <!-- Box for Current Time -->
+        <div id="timeBox">
+            Current Time: <span id="currentTime"></span>
+        </div>
+
+        <!-- JavaScript for Current Time (24-Hour Format) -->
+        <script>
+            function updateTime() {
+                const now = new Date();
+                const hours = String(now.getHours()).padStart(2, '0'); // Get hours in 24-hour format
+                const minutes = String(now.getMinutes()).padStart(2, '0'); // Get minutes
+                const seconds = String(now.getSeconds()).padStart(2, '0'); // Get seconds
+                const timeString = `${hours}:${minutes}:${seconds}`; // Format as HH:MM:SS
+                document.getElementById('currentTime').textContent = timeString;
+            }
+            setInterval(updateTime, 1000); // Update every second
+            updateTime(); // Initial call to display time immediately
+        </script>
+
+        <div align="center">
+            <a href="#top"><img src="pictures/arrow top_edited.png"></a>
+        </div>
+
+        <!-- Background Music -->
+        <audio controls autoplay loop hidden="true">
+            <source src="audio/BLACKPINK - The Happiest Girl.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+
+    </body>
+</html>

@@ -1,0 +1,205 @@
+<html>
+    <head>
+        <title>Family</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+            body {
+                background-image: url(pictures/background.gif);
+                background-size: cover;
+                font-family: Arial, sans-serif;
+                color: #333;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 {
+                color: #d81b60;
+                margin-bottom: 20px;
+            }
+
+            .family-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 40px; /* Spacing between sections */
+                margin: 20px;
+            }
+
+            .parents, .sisters {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 40px; /* Spacing between cards */
+                width: 100%;
+            }
+
+            .parent-card, .sister-card {
+                background-color: #f8bbd0;
+                border-radius: 10px;
+                padding: 20px;
+                width: 350px; /* Adjust width for card size */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                text-align: center;
+            }
+
+            .parent-card img, .sister-card img {
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: #880e4f;
+                margin: 5px 0;
+            }
+
+            .top-link img {
+                width: 50px;
+                height: auto;
+            }
+            
+            .parents h1 {
+                width: 100%; /* Ensure it spans the container */
+                text-align: center; /* Center the text horizontally */
+            }
+
+            .sisters h1 {
+                width: 100%; /* Ensure it spans the container */
+                text-align: center; /* Center the text horizontally */
+            }
+
+            #timeBox {
+                position: fixed; /* Fixed position relative to the viewport */
+                bottom: 10px; /* 10px from the bottom */
+                left: 10px; /* 10px from the left */
+                padding: 10px 20px; /* Add padding inside the box */
+                background-color: rgba(173, 0, 71, 0.8); /* Semi-transparent red background */
+                color: #ffffff; /* White text */
+                font-family: Arial, sans-serif; /* Modern font style */
+                font-size: 18px; /* Readable font size */
+                border-radius: 10px; /* Rounded corners */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+                border: 2px solid #ad0047; /* Border matching the theme color */
+                z-index: 1000; /* Ensure it's above other content */
+        }
+
+        </style>
+    </head>
+
+    <body>
+        
+
+        <div align="center">
+            <p>
+                <img src="pictures/welcomes.webp" alt="Welcome banner" width="1000px">
+            </p>
+
+            <hr size="4" color="#ad0047" width="60%">
+
+            <p>
+                <!-- Using image as hyperlink, local link -->
+                <a href="index.html"><img src="pictures/HOME.png" alt="Home"></a>
+                <a href="biodata.html"><img src="pictures/BIODATA.png" alt="Biodata"></a>
+                <a href="family.html"><img src="pictures/FAMILY.png" alt="Family"></a>
+                <a href="education.html"><img src="pictures/EDUCATION.png" alt="Education"></a>
+                <a href="experience.html"><img src="pictures/EXPERIENCE.png" alt="Experience"></a>
+                <a href="gallery.html"><img src="pictures/GALLERY.png" alt="Gallery"></a>
+            </p>
+            <hr size="4" color="#ad0047" width="60%">
+        </div>
+
+        <div class="family-container">
+            <!-- Parents Section -->
+            <div class="parents">
+                <h1>My Parents</h1>
+
+                <div class="parent-card">
+                    <img src="pictures/dad.jpg" alt="Dad's photo">
+                    <h2>Dad: Izhab bin Ibrahim</h2>
+                    <p>56 years old</p>
+                    <p>A father is a guiding pillar of strength and wisdom.</p>
+                </div>
+
+                <div class="parent-card">
+                    <img src="pictures/mum.jpg" alt="Mum's photo">
+                    <h2>Mum: Noorazian binti Anuar</h2>
+                    <p>49 years old</p>
+                    <p>A mother is a nurturing source of love and resilience.</p>
+                </div>
+            </div>
+
+            <!-- Sisters Section -->
+            <div class="sisters">
+                <h1>My Sisters</h1>
+
+                <div class="sister-card">
+                    <a href="pictures/izzatul.jpg" target="_blank">
+                    <img src="pictures/izzatul.jpg" alt="Izzatul's photo"></a>
+                    <h2>Sister 1: Izzatul Najiha binti Izhab</h2>
+                    <p>26 years old</p>
+                    <p>A strict older sister is a firm guide, instilling discipline and values.</p>
+                </div>
+
+                <div class="sister-card">
+                    <a href="pictures/izzatiori.jpg" target="_blank">
+                    <img src="pictures/izzati.jpg" alt="Izzati's photo"></a>
+                    <h2>Sister 2: Izzati Nur Aisyah binti Izhab</h2>
+                    <p>25 years old</p>
+                    <p>A kind older sister is a caring guide, offering support and compassion.</p>
+                </div>
+
+                <div class="sister-card">
+                    <a href="pictures/izzateenori.jpg" target="_blank">
+                    <img src="pictures/izzateen.jpg" alt="Izzateen's photo"></a>
+                    <h2>Younger Sister 1: Izzateen Nadzirah binti Izhab</h2>
+                    <p>19 years old</p>
+                    <p>A clever younger sister shines with intelligence and quick thinking.</p>
+                </div>
+
+                <div class="sister-card">
+                    <a href="pictures/athirahori.jpg" target="_blank">
+                    <img src="pictures/athirah.jpg" alt="Athirah's photo"></a>
+                    <h2> Younger Sister 2: Izzati Nur Athirah binti Izhab</h2>
+                    <p>10 years old</p>
+                    <p>A naughty yet cute younger sister brings mischief wrapped in charm.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Box for Current Time -->
+        <div id="timeBox">
+            Current Time: <span id="currentTime"></span>
+        </div>
+
+        <!-- JavaScript for Current Time (24-Hour Format) -->
+        <script>
+            function updateTime() {
+                const now = new Date();
+                const hours = String(now.getHours()).padStart(2, '0'); // Get hours in 24-hour format
+                const minutes = String(now.getMinutes()).padStart(2, '0'); // Get minutes
+                const seconds = String(now.getSeconds()).padStart(2, '0'); // Get seconds
+                const timeString = `${hours}:${minutes}:${seconds}`; // Format as HH:MM:SS
+                document.getElementById('currentTime').textContent = timeString;
+            }
+            setInterval(updateTime, 1000); // Update every second
+            updateTime(); // Initial call to display time immediately
+        </script>
+
+        <div align="center" class="top-link">
+            <a href="#top"><img src="pictures/arrow top_edited.png" alt="Back to top"></a>
+        </div>
+
+        <!-- Background Music -->
+        <audio controls autoplay loop hidden="true">
+        <source src="audio/background.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+
+    </body>
+</html>

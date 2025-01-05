@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title>Gallery</title>
+    </head>
+    <style>
+        body
+        {
+            background-image: url(pictures/background.gif);
+            background-size: cover;
+        }
+
+        table, tr, th, td
+        {
+            border: 1px solid #ad0047;
+            border-collapse: collapse;
+            padding: 13px;
+        }
+
+        td
+        {
+            text-align: center;
+            background-color: pink;
+        }
+
+        #timeBox {
+            position: fixed; /* Fixed position relative to the viewport */
+            bottom: 10px; /* 10px from the bottom */
+            left: 10px; /* 10px from the left */
+            padding: 10px 20px; /* Add padding inside the box */
+            background-color: rgba(173, 0, 71, 0.8); /* Semi-transparent red background */
+            color: #ffffff; /* White text */
+            font-family: Arial, sans-serif; /* Modern font style */
+            font-size: 18px; /* Readable font size */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+            border: 2px solid #ad0047; /* Border matching the theme color */
+            z-index: 1000; /* Ensure it's above other content */
+        }
+    </style>
+    <body bgcolor="fae5d3">
+
+        <div align="center">
+        <p>
+        <img src="pictures/welcomes.webp" align="center" width="1000px">
+        </p>
+
+        <hr size="4" color="ad0047" width="60%">
+
+        <p>
+        <!--Using image as hyperlink, local link-->
+        <a href="index.html"><img src="pictures/HOME.png"></a>
+        <a href="biodata.html"><img src="pictures/BIODATA.png"></a>
+        <a href="family.html"><img src="pictures/FAMILY.png"></a>
+        <a href="education.html"><img src="pictures/EDUCATION.png"></a>
+        <a href="experience.html"><img src="pictures/EXPERIENCE.png"></a>
+        <a href="gallery.html"><img src="pictures/GALLERY.png"></a>
+        </p>
+        <hr size="4" color="ad0047" width="60%">
+        </div>
+
+        <br>
+        <br>
+        <table style="width: 70%;" align="center">
+            <tr>
+                <td>
+                    <a href="pictures/myparents.jpg" target="_blank" aria-label="My Parents">
+                        <img src="pictures/myparents.jpg" alt="My Parents" width="250px">
+                    </a>
+                    <h3>My Handsome Father and Beautiful Mother</h3>
+                </td>
+                <td>
+                    <a href="pictures/happyme.JPEG" target="_blank" aria-label="Happy Me">
+                        <img src="pictures/happyme.JPEG" alt="Happy Me" width="250px">
+                    </a>
+                    <h3>Happy Me</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="pictures/myfamily.jpg" target="_blank" aria-label="My Family">
+                        <img src="pictures/myfamily.jpg" alt="My Family" width="450px">
+                    </a>
+                    <h3>My Family</h3>
+                </td>
+                <td>
+                    <a href="pictures/iman.jpg" target="_blank" aria-label="With Iman">
+                        <img src="pictures/iman.jpg" alt="With Iman" width="450px">
+                    </a>
+                    <h3>With Iman</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="pictures/myfriends.JPEG" target="_blank" aria-label="My Friends">
+                        <img src="pictures/myfriends.JPEG" alt="My Friends" width="450px">
+                    </a>
+                    <h3>My Friends</h3>
+                </td>
+                <td>
+                    <a href="pictures/friends.JPEG" target="_blank" aria-label="Our Final Year Project">
+                        <img src="pictures/friends.JPEG" alt="Our final year project" width="450px">
+                    </a>
+                    <h3>Our Final Year Project</h3>
+                </td>
+            </tr>
+        </table>
+    
+        <!-- Box for Current Time -->
+        <div id="timeBox">
+            Current Time: <span id="currentTime"></span>
+        </div>
+    
+        <!-- JavaScript for Current Time (24-Hour Format) -->
+        <script>
+            function updateTime() {
+                const now = new Date();
+                const hours = String(now.getHours()).padStart(2, '0');
+                const minutes = String(now.getMinutes()).padStart(2, '0');
+                const seconds = String(now.getSeconds()).padStart(2, '0');
+                const timeString = `${hours}:${minutes}:${seconds}`;
+                document.getElementById('currentTime').textContent = timeString;
+            }
+            setInterval(updateTime, 1000);
+            updateTime();
+        </script>
+
+    <br>
+    <div align="center">
+        <a href="#top"><img src="pictures/arrow top_edited.png">
+            </a>
+        </div>
+    </body>
+    </html>
